@@ -5,6 +5,15 @@ body {
   background-color: #EAEBF5;
   /* #102EEF #EAEBF5  #FEFEFE */
 }
-.test{
-    background-color: #102EEF;
+.contacto th{
+    background:#102EEF;
+    color: white;
+}
+.contacto td{
+    background:#FEFEFE;
+    color:#102EEF;
+}
+
+h2{
+    color:#102EEF;
 }

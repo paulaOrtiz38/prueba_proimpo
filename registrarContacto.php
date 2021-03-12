@@ -73,10 +73,11 @@
                         url:"php/registroContactos.php",
                         data:cadena,
                         success:function(r){
-                            if(r==1){
+                            console.log(r);
+                            var jsonData = JSON.parse(r);
+                            if(jsonData.success == "1"){
                                 $('#frmRegistroCliente')[0].reset();
-                                alertify.success("Agregado con exito");
-                                window.location="inicio.php";
+                                alertify.success("Contacto "+jsonData.resultado.con_nombres+" "+jsonData.resultado.con_apellidos+" creado con exito");
                             }else{
                                 alertify.error("Fallo al agregar");
                             }

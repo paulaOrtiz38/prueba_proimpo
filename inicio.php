@@ -25,7 +25,7 @@
 
 		</div>
 		<div class="row">
-			<table class="table table-bordered">
+			<table class="table table-bordered contacto" >
 				  <thead>
 				    <tr>
 				      <th scope="col">#</th>

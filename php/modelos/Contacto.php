@@ -37,4 +37,13 @@ class Contacto
 
         return $contactos;
     }
+
+    function verContacto($id){
+        $sql = "SELECT * FROM ".$this->table_name." WHERE id=".$this->id;
+        $result = mysqli_query($this->conexion,$sql);
+        $contactos = $result->fetch_all();
+
+
+        return $contactos;
+    }
 }

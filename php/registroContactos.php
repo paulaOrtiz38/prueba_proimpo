@@ -18,13 +18,12 @@
         $result = $contacto->crearContacto();
 
         if($result){
-            echo 1;
+            echo json_encode(array('success' => 1,'resultado' => $contacto));
         }else{
-            echo 0;
+            echo json_encode(array('success' => 0 ,'resultado' => null));
         }
     } catch (\Throwable $e) {
-        echo 1;
-       // echo json_encode(array('error' => $e->getMessage()));
+        echo json_encode(array('error' => $e->getMessage()));
     }
 
  ?>
